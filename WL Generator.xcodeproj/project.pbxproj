@@ -1,0 +1,311 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD5687BC17CEB10B00D1364C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD5687BB17CEB10B00D1364C /* Cocoa.framework */; };
+		CD5687C617CEB10B00D1364C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD5687C417CEB10B00D1364C /* InfoPlist.strings */; };
+		CD5687C817CEB10B00D1364C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5687C717CEB10B00D1364C /* main.m */; };
+		CD5687CC17CEB10B00D1364C /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CD5687CA17CEB10B00D1364C /* Credits.rtf */; };
+		CD5687CF17CEB10B00D1364C /* wlAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5687CE17CEB10B00D1364C /* wlAppDelegate.m */; };
+		CD5687D217CEB10B00D1364C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD5687D017CEB10B00D1364C /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CD5687B817CEB10B00D1364C /* WL Generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WL Generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD5687BB17CEB10B00D1364C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		CD5687BE17CEB10B00D1364C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		CD5687BF17CEB10B00D1364C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CD5687C017CEB10B00D1364C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CD5687C317CEB10B00D1364C /* WL Generator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WL Generator-Info.plist"; sourceTree = "<group>"; };
+		CD5687C517CEB10B00D1364C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CD5687C717CEB10B00D1364C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CD5687C917CEB10B00D1364C /* WL Generator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WL Generator-Prefix.pch"; sourceTree = "<group>"; };
+		CD5687CB17CEB10B00D1364C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		CD5687CD17CEB10B00D1364C /* wlAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wlAppDelegate.h; sourceTree = "<group>"; };
+		CD5687CE17CEB10B00D1364C /* wlAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wlAppDelegate.m; sourceTree = "<group>"; };
+		CD5687D117CEB10B00D1364C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD5687B517CEB10B00D1364C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD5687BC17CEB10B00D1364C /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD5687AF17CEB10B00D1364C = {
+			isa = PBXGroup;
+			children = (
+				CD5687C117CEB10B00D1364C /* WL Generator */,
+				CD5687BA17CEB10B00D1364C /* Frameworks */,
+				CD5687B917CEB10B00D1364C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD5687B917CEB10B00D1364C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD5687B817CEB10B00D1364C /* WL Generator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD5687BA17CEB10B00D1364C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD5687BB17CEB10B00D1364C /* Cocoa.framework */,
+				CD5687BD17CEB10B00D1364C /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD5687BD17CEB10B00D1364C /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD5687BE17CEB10B00D1364C /* AppKit.framework */,
+				CD5687BF17CEB10B00D1364C /* CoreData.framework */,
+				CD5687C017CEB10B00D1364C /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		CD5687C117CEB10B00D1364C /* WL Generator */ = {
+			isa = PBXGroup;
+			children = (
+				CD5687CD17CEB10B00D1364C /* wlAppDelegate.h */,
+				CD5687CE17CEB10B00D1364C /* wlAppDelegate.m */,
+				CD5687D017CEB10B00D1364C /* MainMenu.xib */,
+				CD5687C217CEB10B00D1364C /* Supporting Files */,
+			);
+			path = "WL Generator";
+			sourceTree = "<group>";
+		};
+		CD5687C217CEB10B00D1364C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD5687C317CEB10B00D1364C /* WL Generator-Info.plist */,
+				CD5687C417CEB10B00D1364C /* InfoPlist.strings */,
+				CD5687C717CEB10B00D1364C /* main.m */,
+				CD5687C917CEB10B00D1364C /* WL Generator-Prefix.pch */,
+				CD5687CA17CEB10B00D1364C /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD5687B717CEB10B00D1364C /* WL Generator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD5687D517CEB10B00D1364C /* Build configuration list for PBXNativeTarget "WL Generator" */;
+			buildPhases = (
+				CD5687B417CEB10B00D1364C /* Sources */,
+				CD5687B517CEB10B00D1364C /* Frameworks */,
+				CD5687B617CEB10B00D1364C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WL Generator";
+			productName = "WL Generator";
+			productReference = CD5687B817CEB10B00D1364C /* WL Generator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD5687B017CEB10B00D1364C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = wl;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = patrick;
+			};
+			buildConfigurationList = CD5687B317CEB10B00D1364C /* Build configuration list for PBXProject "WL Generator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CD5687AF17CEB10B00D1364C;
+			productRefGroup = CD5687B917CEB10B00D1364C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD5687B717CEB10B00D1364C /* WL Generator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD5687B617CEB10B00D1364C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD5687C617CEB10B00D1364C /* InfoPlist.strings in Resources */,
+				CD5687CC17CEB10B00D1364C /* Credits.rtf in Resources */,
+				CD5687D217CEB10B00D1364C /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD5687B417CEB10B00D1364C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD5687C817CEB10B00D1364C /* main.m in Sources */,
+				CD5687CF17CEB10B00D1364C /* wlAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CD5687C417CEB10B00D1364C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD5687C517CEB10B00D1364C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CD5687CA17CEB10B00D1364C /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD5687CB17CEB10B00D1364C /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		CD5687D017CEB10B00D1364C /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD5687D117CEB10B00D1364C /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD5687D317CEB10B00D1364C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CD5687D417CEB10B00D1364C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CD5687D617CEB10B00D1364C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WL Generator/WL Generator-Prefix.pch";
+				INFOPLIST_FILE = "WL Generator/WL Generator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CD5687D717CEB10B00D1364C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WL Generator/WL Generator-Prefix.pch";
+				INFOPLIST_FILE = "WL Generator/WL Generator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD5687B317CEB10B00D1364C /* Build configuration list for PBXProject "WL Generator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD5687D317CEB10B00D1364C /* Debug */,
+				CD5687D417CEB10B00D1364C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD5687D517CEB10B00D1364C /* Build configuration list for PBXNativeTarget "WL Generator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD5687D617CEB10B00D1364C /* Debug */,
+				CD5687D717CEB10B00D1364C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD5687B017CEB10B00D1364C /* Project object */;
+}
