@@ -13,6 +13,7 @@
 		CD5687CC17CEB10B00D1364C /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CD5687CA17CEB10B00D1364C /* Credits.rtf */; };
 		CD5687CF17CEB10B00D1364C /* wlAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5687CE17CEB10B00D1364C /* wlAppDelegate.m */; };
 		CD5687D217CEB10B00D1364C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD5687D017CEB10B00D1364C /* MainMenu.xib */; };
+		CD5687DA17CEB69800D1364C /* CHCSVParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5687D917CEB4C100D1364C /* CHCSVParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		CD5687CD17CEB10B00D1364C /* wlAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wlAppDelegate.h; sourceTree = "<group>"; };
 		CD5687CE17CEB10B00D1364C /* wlAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wlAppDelegate.m; sourceTree = "<group>"; };
 		CD5687D117CEB10B00D1364C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		CD5687D817CEB4C100D1364C /* CHCSVParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHCSVParser.h; sourceTree = "<group>"; };
+		CD5687D917CEB4C100D1364C /* CHCSVParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHCSVParser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,8 @@
 		CD5687C117CEB10B00D1364C /* WL Generator */ = {
 			isa = PBXGroup;
 			children = (
+				CD5687D817CEB4C100D1364C /* CHCSVParser.h */,
+				CD5687D917CEB4C100D1364C /* CHCSVParser.m */,
 				CD5687CD17CEB10B00D1364C /* wlAppDelegate.h */,
 				CD5687CE17CEB10B00D1364C /* wlAppDelegate.m */,
 				CD5687D017CEB10B00D1364C /* MainMenu.xib */,
@@ -167,6 +172,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD5687DA17CEB69800D1364C /* CHCSVParser.m in Sources */,
 				CD5687C817CEB10B00D1364C /* main.m in Sources */,
 				CD5687CF17CEB10B00D1364C /* wlAppDelegate.m in Sources */,
 			);
