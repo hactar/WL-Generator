@@ -23,6 +23,9 @@ Instructions
 * Launch the app and feed in the 3 CSV in the order the app asks for them
 * The generated JSON file is placed on your desktop (wl.json).
 
+![Screenshot](http://subzero.eu/wann/wp-content/uploads/2013/10/wlgeneratorscreenshot.png)
+
+
 Requirements
 ============
 
@@ -31,4 +34,4 @@ Requirements
 Todo
 ====
 
-The tool is fully functional, but coded for personal use, as such it only contains minimal error checking and you'll need to adapt it if you need a different resulting JSON structure.
+The tool is ugly but fully functional, but coded for personal use, as such it only contains minimal error checking and you'll need to adapt it if you need a different resulting JSON structure.
