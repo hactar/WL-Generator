@@ -259,7 +259,7 @@
     //open linien file and generate dict
     
     NSOpenPanel *linienPanel = [NSOpenPanel openPanel];
-    linienPanel.title = @"Please open the linien CSV file...";
+    linienPanel.title = @"Please open the lines/linien CSV file...";
     
     //[saver runModal];
     if ([linienPanel runModal] == NSOKButton){
@@ -280,7 +280,7 @@
     
         
         NSOpenPanel *stegPanel = [NSOpenPanel openPanel];
-        stegPanel.title = @"Please open the steg CSV file...";
+        stegPanel.title = @"Please open the platform/steig CSV file...";
         
         if ([stegPanel runModal] == NSOKButton){
             
@@ -301,7 +301,7 @@
             
             
             NSOpenPanel *stationPanel = [NSOpenPanel openPanel];
-            stationPanel.title = @"Please open the station CSV file...";
+            stationPanel.title = @"Please open the station/haltestellen CSV file...";
             
             if ([stationPanel runModal] == NSOKButton){
                 NSLog(@"Loading in stations...");
@@ -330,6 +330,7 @@
                                                                options:kNilOptions
                                                                  error:nil];
                 [data writeToFile:[@"~/Desktop/wl.json" stringByExpandingTildeInPath] atomically:YES];
+                self.textView.string = @"Done. Check your desktop for wl.json";
                 
             }
             

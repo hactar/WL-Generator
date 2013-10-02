@@ -11,5 +11,6 @@
 @interface wlAppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
+@property (unsafe_unretained) IBOutlet NSTextView *textView;
 
 @end
