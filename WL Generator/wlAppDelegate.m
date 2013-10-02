@@ -321,7 +321,7 @@
                 
                 [stationParser parse];
                 
-                [NSKeyedArchiver archiveRootObject:stationDelegate.array toFile:[@"~/Desktop/test.plist" stringByExpandingTildeInPath]];
+                //[NSKeyedArchiver archiveRootObject:stationDelegate.array toFile:[@"~/Desktop/wl.plist" stringByExpandingTildeInPath]];
                 NSTimeInterval end = [NSDate timeIntervalSinceReferenceDate];
                 
                 NSLog(@"raw difference: %f", (end-start));
@@ -329,7 +329,7 @@
                 NSData *data = [NSJSONSerialization dataWithJSONObject:stationDelegate.array
                                                                options:kNilOptions
                                                                  error:nil];
-                [data writeToFile:[@"~/Desktop/test.json" stringByExpandingTildeInPath] atomically:YES];
+                [data writeToFile:[@"~/Desktop/wl.json" stringByExpandingTildeInPath] atomically:YES];
                 
             }
             

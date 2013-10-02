@@ -32,6 +32,8 @@
 		CD5687D117CEB10B00D1364C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		CD5687D817CEB4C100D1364C /* CHCSVParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHCSVParser.h; sourceTree = "<group>"; };
 		CD5687D917CEB4C100D1364C /* CHCSVParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHCSVParser.m; sourceTree = "<group>"; };
+		CDE664D017FC3F6A0053F77B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		CDE664D117FC3FDB0053F77B /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +51,8 @@
 		CD5687AF17CEB10B00D1364C = {
 			isa = PBXGroup;
 			children = (
+				CDE664D017FC3F6A0053F77B /* README.md */,
+				CDE664D117FC3FDB0053F77B /* LICENSE.txt */,
 				CD5687C117CEB10B00D1364C /* WL Generator */,
 				CD5687BA17CEB10B00D1364C /* Frameworks */,
 				CD5687B917CEB10B00D1364C /* Products */,
@@ -310,6 +314,7 @@
 				CD5687D717CEB10B00D1364C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
