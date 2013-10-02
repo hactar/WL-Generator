@@ -124,6 +124,7 @@
             arrayOfStegs = [NSMutableArray array];
             [_dictionary setValue:arrayOfStegs forKey:stationid];
         }
+        // Some rbls are in one line and are seperated by ":". This takes care of this.
         NSArray *rbls = [[_currentLine valueForKey:@"rbl"] componentsSeparatedByString:@":"];
         for (NSString *rbl in rbls) {
             BOOL addMe = YES;
@@ -134,7 +135,7 @@
                 }
             }
             if (addMe) {
-                [_currentLine setValue:rbl forKey:@"rbl"]; // fix for some rbls being in one line seperated by :
+                [_currentLine setValue:rbl forKey:@"rbl"]; 
                 [arrayOfStegs addObject:[_currentLine copy]];
             }
         }
@@ -254,16 +255,16 @@
     // Insert code here to initialize your application
 }
 - (IBAction)buttonPushed:(id)sender {
-    NSLog(@"Hello World");
     
     //open linien file and generate dict
     
     NSOpenPanel *linienPanel = [NSOpenPanel openPanel];
+    linienPanel.title = @"Please open the linien CSV file...";
     
     //[saver runModal];
     if ([linienPanel runModal] == NSOKButton){
         
-        NSLog(@"Beginning...");
+        NSLog(@"Loading in lines file...");
         NSStringEncoding encoding = 0;
         NSInputStream *stream = [NSInputStream inputStreamWithURL:linienPanel.URL];
         CHCSVParser * p = [[CHCSVParser alloc] initWithInputStream:stream usedEncoding:&encoding delimiter:';'];
@@ -276,15 +277,14 @@
         [p setDelegate:lines];
         
         [p parse];
-        
-        //NSLog(@"%@", lines.dictionary);
+    
         
         NSOpenPanel *stegPanel = [NSOpenPanel openPanel];
+        stegPanel.title = @"Please open the steg CSV file...";
         
-        //[saver runModal];
         if ([stegPanel runModal] == NSOKButton){
             
-            NSLog(@"Beginning...");
+            NSLog(@"Loading in platforms...");
             NSStringEncoding stegEncoding = 0;
             NSInputStream *stegStream = [NSInputStream inputStreamWithURL:stegPanel.URL];
             CHCSVParser * stegParser = [[CHCSVParser alloc] initWithInputStream:stegStream usedEncoding:&stegEncoding delimiter:';'];
@@ -299,13 +299,12 @@
             
             [stegParser parse];
             
-            //NSLog(@"%@", stegDelegate.dictionary);
             
             NSOpenPanel *stationPanel = [NSOpenPanel openPanel];
+            stationPanel.title = @"Please open the station CSV file...";
             
-            //[saver runModal];
             if ([stationPanel runModal] == NSOKButton){
-                NSLog(@"Beginning...");
+                NSLog(@"Loading in stations...");
                 NSTimeInterval start = [NSDate timeIntervalSinceReferenceDate];
                 NSStringEncoding stationEncoding = 0;
                 NSInputStream *stationStream = [NSInputStream inputStreamWithURL:stationPanel.URL];
@@ -332,9 +331,6 @@
                                                                  error:nil];
                 [data writeToFile:[@"~/Desktop/test.json" stringByExpandingTildeInPath] atomically:YES];
                 
-                
-                
-                NSLog(@"%@", stationDelegate.array);
             }
             
         }

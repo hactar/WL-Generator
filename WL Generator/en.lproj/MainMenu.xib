@@ -2,7 +2,7 @@
 <archive type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="8.00">
 	<data>
 		<int key="IBDocument.SystemTarget">1080</int>
-		<string key="IBDocument.SystemVersion">12E55</string>
+		<string key="IBDocument.SystemVersion">12F37</string>
 		<string key="IBDocument.InterfaceBuilderVersion">3084</string>
 		<string key="IBDocument.AppKitVersion">1187.39</string>
 		<string key="IBDocument.HIToolboxVersion">626.00</string>
@@ -1298,7 +1298,7 @@
 			<object class="NSWindowTemplate" id="972006081">
 				<int key="NSWindowStyleMask">15</int>
 				<int key="NSWindowBacking">2</int>
-				<string key="NSWindowRect">{{335, 390}, {480, 360}}</string>
+				<string key="NSWindowRect">{{335, 390}, {526, 410}}</string>
 				<int key="NSWTFlags">1954021376</int>
 				<string key="NSWindowTitle">WL Generator</string>
 				<string key="NSWindowClass">NSWindow</string>
@@ -1311,10 +1311,9 @@
 						<object class="NSButton" id="1051876448">
 							<reference key="NSNextResponder" ref="439893737"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{384, 13}, {82, 32}}</string>
+							<string key="NSFrame">{{430, 13}, {82, 32}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView"/>
 							<string key="NSReuseIdentifierKey">_NS:9</string>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="28062246">
@@ -1367,17 +1366,20 @@
 												<string>WebURLsWithTitlesPboardType</string>
 												<string>public.url</string>
 											</set>
-											<string key="NSFrameSize">{238, 133}</string>
+											<string key="NSFrameSize">{484, 183}</string>
 											<reference key="NSSuperview" ref="72441956"/>
 											<reference key="NSWindow"/>
-											<reference key="NSNextKeyView" ref="259337287"/>
+											<reference key="NSNextKeyView" ref="121509792"/>
 											<string key="NSReuseIdentifierKey">_NS:13</string>
 											<object class="NSTextContainer" key="NSTextContainer" id="990604391">
 												<object class="NSLayoutManager" key="NSLayoutManager">
 													<object class="NSTextStorage" key="NSTextStorage">
 														<object class="NSMutableString" key="NSString">
-															<bytes key="NS.bytes">R2VuZXJhdGVzIG1lcmdlZCBmaWxlIGZvciBXYW5uLiBIaXQgR28uCgoxKSBQaWNrIGxpbmUgZmlsZQoy
-KSBQaWNrIHN0ZWcgZmlsZQozKSBQaWNrIHN0YXRpb24gZmlsZQ</bytes>
+															<bytes key="NS.bytes">VGFrZXMgdGhlIDMgV2llbmVyIExpbmllbiBDU1YgZmlsZXMgZm9yIHRoZSBSQkwgc2VydmVyLCByZW1v
+dmVzIHNvbWUgb2YgdGhlIHVucmVxdWlyZWQgaXRlbXMsIGZpeGVzIHNvbWUgZGlzY3JlcGFuY2llcyBh
+bmQgbWVyZ2VzIHRoZW0gaW50byBhIEpTT04gZmlsZSBmb3IgdXNlIGluIHlvdXIgYXBwLgoKSGl0IEdv
+LgoKMSkgUGljayBsaW5lIGZpbGUKMikgUGljayBzdGVnIGZpbGUKMykgUGljayBzdGF0aW9uIGZpbGUK
+ClRoZSBKU09OIGZpbGUgd2lsbCBiZSBwbGFjZWQgb24geW91ciBkZXNrdG9wLg</bytes>
 														</object>
 														<dictionary key="NSAttributes">
 															<object class="NSFont" key="NSFont">
@@ -1399,7 +1401,7 @@ KSBQaWNrIHN0ZWcgZmlsZQozKSBQaWNrIHN0YXRpb24gZmlsZQ</bytes>
 													<nil key="NSDelegate"/>
 												</object>
 												<reference key="NSTextView" ref="524559843"/>
-												<double key="NSWidth">238</double>
+												<double key="NSWidth">484</double>
 												<int key="NSTCFlags">1</int>
 											</object>
 											<object class="NSTextViewSharedData" key="NSSharedData">
@@ -1447,11 +1449,11 @@ KSBQaWNrIHN0ZWcgZmlsZQozKSBQaWNrIHN0YXRpb24gZmlsZQ</bytes>
 												<int key="NSPreferredTextFinderStyle">1</int>
 											</object>
 											<int key="NSTVFlags">6</int>
-											<string key="NSMaxSize">{463, 10000000}</string>
+											<string key="NSMaxSize">{484, 10000000}</string>
 											<nil key="NSDelegate"/>
 										</object>
 									</array>
-									<string key="NSFrame">{{1, 1}, {238, 133}}</string>
+									<string key="NSFrame">{{1, 1}, {484, 183}}</string>
 									<reference key="NSSuperview" ref="786574557"/>
 									<reference key="NSWindow"/>
 									<reference key="NSNextKeyView" ref="524559843"/>
@@ -1482,7 +1484,7 @@ KSBQaWNrIHN0ZWcgZmlsZQozKSBQaWNrIHN0YXRpb24gZmlsZQ</bytes>
 								<object class="NSScroller" id="259337287">
 									<reference key="NSNextResponder" ref="786574557"/>
 									<int key="NSvFlags">256</int>
-									<string key="NSFrame">{{223, 1}, {16, 133}}</string>
+									<string key="NSFrame">{{469, 1}, {16, 183}}</string>
 									<reference key="NSSuperview" ref="786574557"/>
 									<reference key="NSWindow"/>
 									<reference key="NSNextKeyView" ref="1051876448"/>
@@ -1491,7 +1493,7 @@ KSBQaWNrIHN0ZWcgZmlsZQozKSBQaWNrIHN0YXRpb24gZmlsZQ</bytes>
 									<reference key="NSTarget" ref="786574557"/>
 									<string key="NSAction">_doScroller:</string>
 									<double key="NSCurValue">1</double>
-									<double key="NSPercent">0.85256409645080566</double>
+									<double key="NSPercent">0.93452380952380953</double>
 								</object>
 								<object class="NSScroller" id="121509792">
 									<reference key="NSNextResponder" ref="786574557"/>
@@ -1509,10 +1511,10 @@ KSBQaWNrIHN0ZWcgZmlsZQozKSBQaWNrIHN0YXRpb24gZmlsZQ</bytes>
 									<double key="NSPercent">0.94565218687057495</double>
 								</object>
 							</array>
-							<string key="NSFrame">{{20, 205}, {240, 135}}</string>
+							<string key="NSFrame">{{20, 205}, {486, 185}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView" ref="121509792"/>
+							<reference key="NSNextKeyView" ref="72441956"/>
 							<string key="NSReuseIdentifierKey">_NS:9</string>
 							<int key="NSsFlags">133138</int>
 							<reference key="NSVScroller" ref="259337287"/>
@@ -1523,7 +1525,7 @@ KSBQaWNrIHN0ZWcgZmlsZQozKSBQaWNrIHN0YXRpb24gZmlsZQ</bytes>
 							<double key="NSMagnification">1</double>
 						</object>
 					</array>
-					<string key="NSFrameSize">{480, 360}</string>
+					<string key="NSFrameSize">{526, 410}</string>
 					<reference key="NSSuperview"/>
 					<reference key="NSWindow"/>
 					<reference key="NSNextKeyView" ref="786574557"/>
@@ -2809,13 +2811,13 @@ KSBQaWNrIHN0ZWcgZmlsZQozKSBQaWNrIHN0YXRpb24gZmlsZQ</bytes>
 								<reference key="secondItem" ref="786574557"/>
 								<int key="secondAttribute">6</int>
 								<float key="multiplier">1</float>
-								<object class="IBLayoutConstant" key="constant">
-									<double key="value">220</double>
+								<object class="IBNSLayoutSymbolicConstant" key="constant">
+									<double key="value">20</double>
 								</object>
 								<float key="priority">1000</float>
 								<reference key="containingView" ref="439893737"/>
-								<int key="scoringType">3</int>
-								<float key="scoringTypeFloat">9</float>
+								<int key="scoringType">9</int>
+								<float key="scoringTypeFloat">40</float>
 								<int key="contentType">3</int>
 							</object>
 							<object class="IBNSLayoutConstraint" id="540580382">
@@ -3605,10 +3607,51 @@ KSBQaWNrIHN0ZWcgZmlsZQozKSBQaWNrIHN0YXRpb24gZmlsZQ</bytes>
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">551</int>
+			<int key="maxID">552</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
+				<object class="IBPartialClassDescription">
+					<string key="className">NSDocument</string>
+					<dictionary class="NSMutableDictionary" key="actions">
+						<string key="printDocument:">id</string>
+						<string key="revertDocumentToSaved:">id</string>
+						<string key="runPageLayout:">id</string>
+						<string key="saveDocument:">id</string>
+						<string key="saveDocumentAs:">id</string>
+						<string key="saveDocumentTo:">id</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="actionInfosByName">
+						<object class="IBActionInfo" key="printDocument:">
+							<string key="name">printDocument:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="revertDocumentToSaved:">
+							<string key="name">revertDocumentToSaved:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="runPageLayout:">
+							<string key="name">runPageLayout:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="saveDocument:">
+							<string key="name">saveDocument:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="saveDocumentAs:">
+							<string key="name">saveDocumentAs:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="saveDocumentTo:">
+							<string key="name">saveDocumentTo:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</dictionary>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/NSDocument.h</string>
+					</object>
+				</object>
 				<object class="IBPartialClassDescription">
 					<string key="className">NSLayoutConstraint</string>
 					<string key="superclassName">NSObject</string>
