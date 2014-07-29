@@ -128,15 +128,23 @@
         NSArray *rbls = [[_currentLine valueForKey:@"rbl"] componentsSeparatedByString:@":"];
         for (NSString *rbl in rbls) {
             BOOL addMe = YES;
-            for (NSDictionary *element in arrayOfStegs) {
+            for (NSMutableDictionary *element in arrayOfStegs) {
                 if ([[element valueForKey:@"rbl"] isEqualToString:rbl]) {
                     addMe = NO;
+                    
+                    // instead, append line here to related lines or maybe this is bloedsinn.
+                    NSArray *linesThatAreInAlready = [[element valueForKey:@"line"] componentsSeparatedByString:@"|"];
+                    if (![linesThatAreInAlready containsObject:[_currentLine valueForKey:@"line"]]) {
+                        NSString *newLine = [(NSString *)[element valueForKey:@"line"] stringByAppendingString:[NSString stringWithFormat:@"|%@", [_currentLine valueForKey:@"line"] ] ];
+                        [element setValue: newLine forKey:@"line"];
+                    }
+
                     break;
                 }
             }
             if (addMe) {
                 [_currentLine setValue:rbl forKey:@"rbl"]; 
-                [arrayOfStegs addObject:[_currentLine copy]];
+                [arrayOfStegs addObject:_currentLine];
             }
         }
 
@@ -217,8 +225,9 @@
         }
         NSMutableString *relatedLines = [NSMutableString stringWithString:@""];
         NSMutableSet *relatedLinesSet = [NSMutableSet setWithCapacity:2];
-        for (NSDictionary *element in platforms) {
-            [relatedLinesSet addObject:[element valueForKey:@"line"]];
+        for (NSMutableDictionary *element in platforms) {
+            NSArray *array = [[element valueForKey:@"line"] componentsSeparatedByString:@"|"];
+            [relatedLinesSet addObjectsFromArray:array];
         }
         int i = 0;
         for (NSString *line in relatedLinesSet) {
